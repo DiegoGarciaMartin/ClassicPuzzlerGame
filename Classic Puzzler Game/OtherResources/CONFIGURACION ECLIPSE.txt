@@ -1,8 +1,0 @@
-En el fichero 'eclipse.ini' en la carpeta de instalación de eclipse, editar estos
-parámetros a los siguientes valores:
-
--Xms512m
--Xmx1024m
-
-
-Sino da el error 'unable to execute dex gc overhead limit exceeded gc overhead limit exceeded'
