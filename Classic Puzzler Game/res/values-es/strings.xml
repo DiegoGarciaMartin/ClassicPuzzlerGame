@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string name="app_name">Classic Puzzler Game</string>
+    
+    
+    <!-- Main activity -->
+    <string name="buttonStart">JUGAR</string>
+    <string name="buttonRating">PUNTUACIONES</string>
+    <string name="buttonOptions">OPCIONES</string>
+    
+    
+    <!-- Game activity -->
+    <string name="textViewLabelNext">SIG.</string>
+    <string name="textViewLabelLevel">Nivel</string>
+    <string name="textViewLabelScore">Puntos</string>
+    <string name="textViewLabelLines">Líneas</string>
+    <string name="buttonDescriptionLeft">Izq</string>
+    <string name="buttonDescriptionRight">Dereha</string>
+    <string name="buttonDescriptionDown">Abajo</string>
+    <string name="buttonDescriptionDownFull">Abajo</string>
+    <string name="buttonDescriptionRotate">Rotar</string>
+    <string name="buttonDescriptionPause">Pausa</string>
+    
+    
+    <!-- Rating activity -->
+    <string name="textViewLabelTitleRating">TOP 10 PARTIDAS!</string>
+    
+    
+    <!-- Options activity -->
+    <string name="textViewSound">Sonido</string>
+    <string name="textViewIncreaseLevel">Aumentar nivel</string>
+    <string name="textViewShowNextPiece">Mostrar siguiente pieza</string>
+    <string name="textViewLevel">Nivel inicial: </string>
+    <string name="textViewShowShadowPiece">Mostrar sombra de pieza</string>
+    <string name="textViewButtonSensitivity">Sensibilidad botones: </string>
+
+    
+    <!-- Widgets -->
+    <string name="switchButtonOn">Si</string>
+    <string name="switchButtonOff">No</string>
+    
+    
+    <!-- Popups -->
+    <string name="popupGameOverLabel">GAME OVER</string>
+    <string name="popupGameOverButtonPlay">Reiniciar</string>
+    <string name="popupPauseLabel">PAUSA</string>
+    <string name="popupPauseButtonResume">Continuar</string>
+    <string name="popupPauseButtonRestart">Reiniciar</string>
+    <string name="popupButtonExit">Salir</string>
+    
+</resources>

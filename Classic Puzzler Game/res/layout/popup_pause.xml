@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupPause"
+    android:layout_width="225dp"
+    android:layout_height="160dp"
+    android:background="@drawable/popup_gameover_shape"
+    android:padding="15dp"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popupPauseLabel"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/Yellow"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+	        android:id="@+id/buttonPauseResume"
+	        android:text="@string/popupPauseButtonResume"
+	        android:layout_marginBottom="8dp"
+	        android:layout_width="match_parent"
+	        style="@style/button_Popup" />
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+    
+	    <Button
+	        android:id="@+id/buttonPauseRestart"
+	        android:text="@string/popupPauseButtonRestart"
+	        style="@style/button_Popup" />
+	
+	    <Button
+	        android:id="@+id/buttonPauseExit"
+	        android:text="@string/popupButtonExit"
+	        style="@style/button_Popup" />
+    
+    </LinearLayout>
+
+</LinearLayout>

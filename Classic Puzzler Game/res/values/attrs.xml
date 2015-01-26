@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="SwitchButton">
+        <attr name="switch_state" format="boolean"/>
+        <attr name="button_on_text" format="string"/>
+        <attr name="button_off_text" format="string"/>
+    </declare-styleable>
+    
+</resources>

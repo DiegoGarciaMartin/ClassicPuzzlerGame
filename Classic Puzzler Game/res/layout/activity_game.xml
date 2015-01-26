@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Yellow"
+    android:orientation="vertical"
+    tools:context="com.tetris.presentation.GameActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal" >
+
+        <!-- BOARD -->
+        <com.tetris.presentation.ViewBoardTetris
+            android:id="@+id/viewBoardTetris"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        
+
+        <!-- SCORE, NEXT SHEET, ... -->
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/Black"
+            android:orientation="vertical"
+            android:padding="2dp" >
+            
+            <ImageButton
+                android:id="@+id/buttonPause"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/game_button_selector"
+                android:contentDescription="@string/buttonDescriptionPause"
+                android:src="@drawable/pause" />
+
+            <TextView
+                android:id="@+id/textViewLabelNextPiece"
+                style="@style/textLargePlay_GameActivity"
+                android:layout_marginTop="10dp"
+                android:text="@string/textViewLabelNext" />
+
+            <com.tetris.presentation.ViewNextPieceTetris
+                android:id="@+id/viewNextPiece"
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+
+            <TextView
+                style="@style/textMediumPlay_GameActivity"
+                android:text="@string/textViewLabelLevel" />
+
+            <TextView
+                android:id="@+id/textViewLevel"
+                style="@style/textLargePlay_GameActivity" />
+
+            <TextView
+                style="@style/textMediumPlay_GameActivity"
+                android:text="@string/textViewLabelScore" />
+
+            <TextView
+                android:id="@+id/textViewScore"
+                style="@style/textMediumPlay_GameActivity" />
+
+            <TextView
+                style="@style/textMediumPlay_GameActivity"
+                android:text="@string/textViewLabelLines" />
+
+            <TextView
+                android:id="@+id/textViewLines"
+                style="@style/textMediumPlay_GameActivity" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <!-- BUTTONS -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/Black"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" >
+
+        <ImageButton
+            android:id="@+id/buttonDownFull"
+            style="@style/buttonPlay_GameActivity"
+            android:contentDescription="@string/buttonDescriptionDownFull"
+            android:src="@drawable/arrow_down_full" />
+        
+        <ImageButton
+            android:id="@+id/buttonLeft"
+            style="@style/buttonPlay_GameActivity"
+            android:contentDescription="@string/buttonDescriptionLeft"
+            android:src="@drawable/arrow_left" />
+
+        <ImageButton
+            android:id="@+id/buttonDown"
+            style="@style/buttonPlay_GameActivity"
+            android:contentDescription="@string/buttonDescriptionDown"
+            android:src="@drawable/arrow_down" />
+        
+        <ImageButton
+            android:id="@+id/buttonRight"
+            style="@style/buttonPlay_GameActivity"
+            android:contentDescription="@string/buttonDescriptionRight"
+            android:src="@drawable/arrow_right" />
+
+        <ImageButton
+            android:id="@+id/buttonRotation"
+            style="@style/buttonPlay_GameActivity"
+            android:contentDescription="@string/buttonDescriptionRotate"
+            android:src="@drawable/arrow_rotation" />
+        
+    </LinearLayout>
+
+</LinearLayout>

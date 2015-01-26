@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- Buttons main activity -->
+    <style name="buttonMainActivity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Navy</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/buttonMainMargin</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMainMargin</item>
+        <item name="android:padding">@dimen/buttonMainPadding</item>
+        <item name="android:background">@drawable/main_button_selector</item>
+        <item name="android:minWidth">@dimen/buttonMainMinWidth</item>
+        <item name="android:minHeight">@dimen/buttonMainMinHeigth</item>
+    </style>
+    
+    <!-- Buttons play game activity -->
+    <style name="buttonPlay_GameActivity">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">.20</item>
+        <item name="android:background">@drawable/game_button_selector</item>
+    </style>
+    
+    <!-- TextBox play game activity -->
+    <style name="textMediumPlay_GameActivity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    
+    <style name="textLargePlay_GameActivity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:textColor">@color/Yellow</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+    
+    
+    <!-- Button popup -->
+    <style name="button_Popup">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/popup_button_selector_text</item>
+        <item name="android:background">@drawable/popup_button_selector_background</item>
+    </style>
+
+</resources>

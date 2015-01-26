@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sgo="http://schemas.android.com/apk/res/com.dgm.classicPuzzlerGame"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tetris.presentation.OptionsActivity" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/Gray"
+            android:orientation="vertical" >
+
+            <!-- ACTIVATE SOUND -->
+			
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textViewSound"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <com.widgets.SwitchButton
+                    android:id="@+id/switchButtonSound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    sgo:button_off_text="@string/switchButtonOff"
+                    sgo:button_on_text="@string/switchButtonOn" />
+            </LinearLayout>
+			
+
+            <!-- ACTIVATE INCREASE LEVEL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textViewIncreaseLevel"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <com.widgets.SwitchButton
+                    android:id="@+id/switchButtonIncreaseLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    sgo:button_off_text="@string/switchButtonOff"
+                    sgo:button_on_text="@string/switchButtonOn" />
+            </LinearLayout>
+
+            <!-- ACTIVATE SHOW NEXT PIECE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textViewShowNextPiece"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <com.widgets.SwitchButton
+                    android:id="@+id/switchButtonShowNextPiece"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    sgo:button_off_text="@string/switchButtonOff"
+                    sgo:button_on_text="@string/switchButtonOn" />
+            </LinearLayout>
+            
+            <!-- ACTIVATE SHADOW PIECE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textViewShowShadowPiece"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <com.widgets.SwitchButton
+                    android:id="@+id/switchButtonShadowPiece"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    sgo:button_off_text="@string/switchButtonOff"
+                    sgo:button_on_text="@string/switchButtonOn" />
+            </LinearLayout>
+
+            <!-- INITIAL LEVEL -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/textViewInitialLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textViewLevel"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <SeekBar
+                    android:id="@+id/seekBarInitialLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="30"
+                    android:progress="1" />
+            </LinearLayout>
+            
+            <!-- INITIAL LEVEL -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:background="@color/White"
+                android:orientation="vertical"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/textViewButtonSensitivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textViewButtonSensitivity"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <SeekBar
+                    android:id="@+id/seekBarButtonSensitivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="9"
+                    android:progress="1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
