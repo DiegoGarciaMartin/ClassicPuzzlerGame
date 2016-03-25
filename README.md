@@ -1,7 +1,8 @@
 # ClassicPuzzlerGame
 Tetris implementation for Android
 
-
+<br>
+### Screenshots
 <table>
   <tr>
     <td>
@@ -35,6 +36,10 @@ Tetris implementation for Android
     </td>
   <tr>
 </table>
+
+<br>
+### Demostration's video
+https://www.youtube.com/watch?v=EtUJ1ufUzwc
 
 
 
